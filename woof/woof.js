@@ -5,3 +5,6 @@ function woof(name, weight) {
     console.log(name + " says woof woof.");
   }
 }
+
+woof("riki", 54);
+woof("gin", 18);
