@@ -5,7 +5,7 @@ var scores = [
 
 var i = 0;
 
-var = output;
+var output;
 
 var tests = "Bubbles tests: " + scores.length;
 
