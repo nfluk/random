@@ -9,8 +9,6 @@ var output;
 
 var tests = "Bubbles tests: " + scores.length;
 
-var highest = "Highest bubble score: " + scores.highest;
-
 while (i < scores.length) {
   output = "Bubble solution #" + i + " score: " + scores[i];
   console.log(output);
@@ -18,4 +16,3 @@ while (i < scores.length) {
 }
 
 console.log(tests);
-console.log(highest);
