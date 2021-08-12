@@ -9,7 +9,7 @@ function makePhrase() {
   var rand2 = Math.floor(Math.random() * word2.length);
   var rand3 = Math.floor(Math.random() * word3.length);
 
-  //concatenate the randomly chosen words into a string
+  //chose a random word from each array and concatenate the words into a string
   var string = word1[rand1] + " " + word2[rand2] + " " + word3[rand3];
 
   //display the string
