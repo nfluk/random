@@ -5,8 +5,15 @@ var scores = [
 
 var i = 0;
 
+var tests = "Bubbles tests: " + scores.length;
+
+var highest = "Highest bubble score: " + scores.highest;
+
 while (i < scores.length) {
   output = "Bubble solution #" + i + " score: " + scores[i];
   console.log(output);
   i = i + 1;
 }
+
+console.log(tests);
+console.log(highest);
