@@ -5,6 +5,8 @@ var scores = [
 
 var i = 0;
 
+var = output;
+
 var tests = "Bubbles tests: " + scores.length;
 
 var highest = "Highest bubble score: " + scores.highest;
