@@ -3,5 +3,5 @@ function myFunction() {
 }
 
 function loadFunc() {
-  alert("The pages has loaded.");
+  alert("The pages has loaded." + new Date());
 }
