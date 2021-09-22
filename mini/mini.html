@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Site</title>
   </head>
-  <body onresize="spy('resized the window!')">
+  <body>
     <p>This is some random site to play around in.</p>
 
-    <button onclick="spy('clicked the button!')">Click me</button>
+    <button id="button">Click me</button>
 
-    <p>
+    <p id="pOne">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -21,7 +21,7 @@
       est laborum.
     </p>
 
-    <p>
+    <p id="pTwo">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -32,5 +32,10 @@
     </p>
 
     <script src="mini.js"></script>
+    <script>
+      document.getElementById("button").onclick = function () {
+        spy("clicked the button!");
+      };
+    </script>
   </body>
 </html>
