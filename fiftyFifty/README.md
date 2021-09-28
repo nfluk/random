@@ -3,3 +3,4 @@
 ## What I learned
 
 - To use document.getElementById().onclick
+- To change text color using JS
