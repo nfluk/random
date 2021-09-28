@@ -7,4 +7,6 @@ document.getElementById("flipper").onclick = function () {
     console.log("Tails");
     console.log(flip);
   }
+
+  this.style.color = "red";
 };
