@@ -2,4 +2,5 @@
 
 ## What I learned
 
-- I learned simple for loops in JS
+- simple for loops in JS
+- to use return in a function
