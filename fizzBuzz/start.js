@@ -1,5 +1,3 @@
-var num = prompt();
-
 function fizzBuzz(num) {
   var start = 1;
   while (start < num) {
@@ -11,3 +9,9 @@ function fizzBuzz(num) {
     start++;
   }
 }
+
+document.getElementById("StartButton").onclick = function () {
+  prompt("Enter a number:");
+  var num = prompt();
+  fizzBuzz(num);
+};
