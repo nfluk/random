@@ -7,3 +7,13 @@ if (question.length - 1 === question.indexOf("?")) {
 } else {
   console.log("that's not a question!");
 }
+
+// another way using less code
+
+var question = "Is this a question?";
+
+if (question.endsWith("?")) {
+  console.log("yes");
+} else {
+  console.log("that's not a question!");
+}
