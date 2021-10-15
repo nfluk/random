@@ -17,3 +17,15 @@ if (question.endsWith("?")) {
 } else {
   console.log("that's not a question!");
 }
+
+// turning the second version into a function
+
+var question = "Is this a question?";
+
+function isQuestion(potentialQuestion) {
+  if (potentialQuestion.endsWith("?")) {
+    return "yes";
+  } else {
+    return "that's not a question!";
+  }
+}
