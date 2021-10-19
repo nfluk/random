@@ -1,11 +1,13 @@
 // checks if an argument is a valid HTML element
 
-// not a good solution b/c non valid tags are possible and it still passes
 function isHTMLElement(string) {
-  return (
-    string.includes("<") &&
-    string.includes("</") &&
-    string.includes(">") &&
-    string.includes(">")
-  );
+  var last = string.length - 1;
+
+  if (string[0] === "<" && string[1] === "/" && string[last] === ">") {
+    return true;
+  } else if (string[0] === "<" && string[last] === ">") {
+    return true;
+  } else {
+    return false;
+  }
 }
