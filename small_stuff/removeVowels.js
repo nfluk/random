@@ -19,3 +19,25 @@ function removeVowel(message) {
     }
   }
 }
+
+// function that skips the vowels and returns the rest of the letters from the string
+
+function skipVowels(string) {
+  if (typeof string !== "string") {
+    throw "the input of skipVewels must be a string!!!";
+  }
+
+  var result = "";
+
+  for (i = 0; i < string.length; i++)
+    if (
+      string.charAt(i) !== "a" &&
+      string.charAt(i) !== "o" &&
+      string.charAt(i) !== "u" &&
+      string.charAt(i) !== "e" &&
+      string.charAt(i) !== "i"
+    ) {
+      result = result + string.charAt(i);
+    }
+  return result;
+}
