@@ -32,3 +32,21 @@ function firstLowerCase(tweet) {
   }
   return result;
 }
+
+// a third way to do the same thing (that I just learned of)
+
+function firstLowerCase(tweet) {
+  if (typeof tweet !== "string") {
+    throw "the input to firstLowerCase needs to be a string!";
+  }
+
+  var result = "";
+
+  for (i = 0; i < tweet.length && result === ""; i++) {
+    // added a second condition to the loop
+    if ("a" <= tweet.charAt(i) && tweet.charAt(i) <= "z") {
+      result = tweet.charAt(i);
+    }
+  }
+  return result;
+}
