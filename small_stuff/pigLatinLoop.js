@@ -1,6 +1,6 @@
 // pigLatin using a while loop and no arrays - I couldn't do it. Revisit when learned more js!!
 
-function pigLatin(word) {
+/* function pigLatin(word) {
   if (typeof word !== "string") {
     throw "The input for pigLatin needs to be a string!!!";
   }
@@ -35,4 +35,4 @@ function pigLatin(word) {
   result = firstPart + secondPart + "ay";
 
   return result;
-}
+} */
