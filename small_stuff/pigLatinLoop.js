@@ -1,4 +1,4 @@
-// pigLatin using a while loop
+// pigLatin using a while loop and no arrays - I couldn't do it. Revisit when learned more js!!
 
 function pigLatin(word) {
   if (typeof word !== "string") {
