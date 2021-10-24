@@ -12,7 +12,7 @@ function sumAToB(a, b) {
       result += i;
     }
   } else if (a > b) {
-    for (i = b; i <= b; i++) {
+    for (i = b; i <= a; i++) {
       result += i;
     }
   } else {
