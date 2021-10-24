@@ -11,7 +11,7 @@ function sumAToB(a, b) {
     for (i = a; i <= b; i++) {
       result += i;
     }
-  } else if (a > b) {
+  } else if (a >= b) {
     for (i = b; i <= a; i++) {
       result += i;
     }
