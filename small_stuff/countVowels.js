@@ -29,8 +29,10 @@ function countVowels(str) {
 
   var sum = 0;
 
-  for (i = 0; i <= str.length && isVowel(str.charAt(i)); i++) {
-    sum = sum + 1;
+  for (i = 0; i <= str.length; i++) {
+    if (isVowel(str.charAt(i))) {
+      sum = sum + 1;
+    }
   }
 
   return sum;
