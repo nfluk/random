@@ -5,7 +5,7 @@ function isPrime(num) {
     throw "The input needs to be a number!";
   }
 
-  var result;
+  var result = true;
 
   if (num <= 1) {
     result = false;
