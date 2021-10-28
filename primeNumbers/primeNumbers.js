@@ -1,3 +1,5 @@
-var num = document.getElementById("potentialPrime");
+var num = document.getElementById("prime");
 
-alert(num);
+function isPrime(num) {
+  alert(num);
+}
