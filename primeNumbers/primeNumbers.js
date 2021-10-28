@@ -21,3 +21,24 @@ function isPrime(num) {
 
   return result;
 }
+
+// sums all primes up to input number
+function sumPrimesUpTo(number) {
+  if (typeof number !== "number") {
+    throw "You need to enter a number!!";
+  }
+
+  var sum = 0;
+  var i = 0;
+
+  while (i < number) {
+    if (isPrime(i) === true) {
+      sum = sum + i;
+      i++;
+    } else {
+      i++;
+    }
+  }
+
+  return sum;
+}
