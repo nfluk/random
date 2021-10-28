@@ -1,6 +1,5 @@
 // checks if a number is a prime number and returns true, or if it is not a prime number (returns false)
-var num = document.getElementById("potentialPrime");
-num = parseInt(num);
+var num = parseInt(document.getElementById("potentialPrime").value);
 
 function isPrime(num) {
   if (typeof num !== "number") {
