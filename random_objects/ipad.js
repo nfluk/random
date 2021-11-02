@@ -7,4 +7,4 @@ const ipad = {
   storage: 64,
 };
 
-console.log("Object:", ipad);
+console.log("The first object is:", ipad);
