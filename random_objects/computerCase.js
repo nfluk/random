@@ -11,3 +11,5 @@ const computerCase = {
     color: "silver",
   },
 };
+
+console.log("The second object is:", computerCase);
