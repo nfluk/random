@@ -6,3 +6,5 @@ const ipad = {
   color: "space grey",
   storage: 64,
 };
+
+console.log("Object:", ipad);
