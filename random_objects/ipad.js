@@ -1,8 +1,8 @@
 // creating an iPad object
 
 const ipad = {
-    name: "Regular iPad"
-    height: 25
-    color: "space grey"
-    storage: 64 
-}
+  name: "Regular iPad",
+  height: 25,
+  color: "space grey",
+  storage: 64,
+};
