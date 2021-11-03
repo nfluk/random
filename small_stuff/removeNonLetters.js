@@ -22,3 +22,5 @@ function removeNonLetters(str) {
 
   return result;
 }
+
+export default removeNonLetters;
