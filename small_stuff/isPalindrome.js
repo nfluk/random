@@ -29,7 +29,7 @@ function isPalindrome(string) {
   var result = "";
   var newString = removeNonLetters(string);
 
-  if (typeof string === reverseString(newString)) {
+  if (newString === reverseString(newString)) {
     result = true;
   } else {
     result = false;
