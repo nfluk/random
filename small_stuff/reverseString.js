@@ -13,3 +13,5 @@ function reverseString(message) {
 
   return result;
 }
+
+export default reverseString;
