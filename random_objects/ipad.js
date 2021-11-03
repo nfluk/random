@@ -8,3 +8,13 @@ const ipad = {
 };
 
 console.log("The first object is:", ipad);
+
+// creating a blueprint for an iPad object
+
+function Ipad(name, height, color, storage) {
+  this.name = name;
+  this.height = height;
+  this.color = color;
+  this.storage = storage;
+  // add a storageLeft and a function that updates storageLeft
+}
