@@ -1,6 +1,7 @@
 // checks to see if a string is a palindrome or not - takes whitespace into account
 
 import reverseString from "./reverseString";
+import removeNonLetters from "./removeNonLetters";
 
 function isPalindrome(string) {
   if (string !== "string") {
