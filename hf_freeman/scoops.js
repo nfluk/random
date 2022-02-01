@@ -1,6 +1,10 @@
 var scoops = 5;
 
 while (scoops > 0) {
+  if (scoops < 2) {
+    document.write("Warning! Ice cream is running low!! <br>");
+  }
+
   document.write("Another scoop, please! <br>");
   scoops -= 1;
 }
