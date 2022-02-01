@@ -5,7 +5,7 @@ while (scoops > 0) {
     document.write("Warning! Ice cream is running low!! <br>");
   }
 
-  document.write("Another scoop, please! <br>");
+  document.write("Yum! That scoop was good! <br>");
   scoops -= 1;
 }
 
