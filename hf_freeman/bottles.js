@@ -9,6 +9,10 @@ while (count > 0) {
 
   count -= 1;
 
+  if (count == 1) {
+    word = "bottle";
+  }
+
   if (count > 0) {
     console.log(count + " " + word + " of beer on the wall.");
   } else {
