@@ -1,6 +1,7 @@
 /* 
 
-High-level game setup:
+General flow of game:
+
 1. user starts game
 2. game places a ship at a random location on grid
 3. game play begins. Repeat the following until ship sunk:
