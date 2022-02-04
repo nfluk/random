@@ -32,5 +32,3 @@ var guesses = 0;
 // declare and initialize if ship is sunk or not
 
 var isSunk = false;
-
-console.log(location1);
