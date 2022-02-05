@@ -32,3 +32,21 @@ var guesses = 0;
 // declare and initialize if ship is sunk or not
 
 var isSunk = false;
+
+while ((isSunk = false)) {
+  guess = prompt("Enter a number in the range 0-6.", "Number in range 0-6.");
+
+  if (typeof (guess == Number) && guess <= 6 && guess >= 0) {
+    if (guess == location1 || guess == location2 || guess == location3) {
+      alert("HIT!");
+      hits += 1;
+    } else {
+      alert("Miss. Try again.");
+    }
+  } else {
+    guess = prompt(
+      "That is not a number in the range 0-6. Please enter a number in the range 0-6.",
+      "Number in range 0-6."
+    );
+  }
+}
