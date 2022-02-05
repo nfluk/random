@@ -36,17 +36,31 @@ var isSunk = false;
 while ((isSunk = false)) {
   guess = prompt("Enter a number in the range 0-6.", "Number in range 0-6.");
 
-  if (typeof (guess == Number) && guess <= 6 && guess >= 0) {
-    if (guess == location1 || guess == location2 || guess == location3) {
-      alert("HIT!");
-      hits += 1;
-    } else {
-      alert("Miss. Try again.");
-    }
-  } else {
-    guess = prompt(
+  // step 1: check if input is a number in range 0-6
+  if (typeof guess != Number || guess > 6 || guess < 0) {
+    alert(
       "That is not a number in the range 0-6. Please enter a number in the range 0-6.",
       "Number in range 0-6."
     );
   }
+
+  // step 2: check if hit or miss and add guesses & hits
+  if (guess == location1 || guess == location2 || guess == location3) {
+    alert("HIT! Well done!");
+    guesses += 1;
+    hits += 1;
+  } else {
+    alert("Miss. Try again.");
+    guesses += 1;
+  }
+
+  // step 3: check if ship is sunk
+  if (hits == 3) {
+    alert("Good job. You sank my ship!");
+    isSunk = true;
+  }
 }
+// step 4: tell player the score
+alert(
+  "Good job. You sank my ship! It took you " + guesses + " to sink the ship."
+);
