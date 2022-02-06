@@ -33,7 +33,7 @@ var guesses = 0;
 
 var isSunk = false;
 
-while ((isSunk = false)) {
+while (isSunk == false) {
   guess = prompt("Enter a number in the range 0-6.", "Number in range 0-6.");
 
   // step 1: check if input is a number in range 0-6
