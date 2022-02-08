@@ -35,6 +35,11 @@ var isSunk = false;
 
 while (isSunk == false) {
   guess = prompt("Enter a number in the range 0-6.", "Number in range 0-6.");
+
+  if (guess == null) {
+    break;
+  }
+
   guess = parseInt(guess, 10);
 
   // step 1: check if input is a number in range 0-6
@@ -56,9 +61,11 @@ while (isSunk == false) {
     // step 3: check if ship is sunk
     if (hits == 3) {
       isSunk = true;
+      // step 4: tell player the score
+      alert("Good job. You sank my ship!");
+      alert("It took you " + guesses + " guesses to sink the ship.");
     }
   }
 }
-// step 4: tell player the score
-alert("Good job. You sank my ship!");
-alert("It took you " + guesses + " guesses to sink the ship.");
+
+alert("Thanks for playing and hope to see you again.");
