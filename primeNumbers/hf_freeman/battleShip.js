@@ -64,6 +64,7 @@ while (isSunk == false) {
       // step 4: tell player the score
       alert("Good job. You sank my ship!");
       alert("It took you " + guesses + " guesses to sink the ship.");
+      alert("Your accuracy was: " + guesses / 3 + "%");
     }
   }
 }
