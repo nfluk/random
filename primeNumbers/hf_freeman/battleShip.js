@@ -13,7 +13,7 @@ General flow of game:
 
 // declare and initialize ship location variables
 
-var location1 = Math.round(Math.random() * 4); // initialize randomly later
+var location1 = Math.floor(Math.random() * 5); // initialize randomly later
 var location2 = location1 + 1;
 var location3 = location1 + 2;
 
