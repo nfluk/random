@@ -8,4 +8,4 @@ function woof(dogName, dogWeight) {
   }
 }
 
-woof(dogWeight, dogWeight);
+woof();
