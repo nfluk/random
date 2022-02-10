@@ -1,4 +1,6 @@
 function woof(dogName, dogWeight) {
+  var dogName = prompt("Type a dog name:", "Dog name");
+  var dogWeight = prompt("Type the dogs weight in lbs:", "Dog weight (lbs)");
   if (dogWeight > 20) {
     console.log(dogName + " goes WOOF WOOF");
   } else {
@@ -6,5 +8,4 @@ function woof(dogName, dogWeight) {
   }
 }
 
-woof("Peanut", 6);
-woof("Buster", 46);
+woof(dogWeight, dogWeight);
