@@ -5,8 +5,8 @@ function woof(dogName, dogWeight) {
 
   // run the logic to see result
   if (dogWeight > 20) {
-    console.log(dogName + " goes WOOF WOOF");
+    alert(dogName + " goes WOOF WOOF");
   } else {
-    console.log(dogName + " goes woof woof");
+    alert(dogName + " goes woof woof");
   }
 }
