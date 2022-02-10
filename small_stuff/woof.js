@@ -4,7 +4,7 @@ function woof(dogName, dogWeight) {
   var dogWeight = prompt("Type the dogs weight in lbs:", "Dog weight (lbs)");
 
   // capitalize the first letter in the name parameter
-  dogName = dogName.charAt(0).toUpperCase + dogName.slice(1);
+  dogName = dogName.charAt(0).toUpperCase() + dogName.slice(1);
 
   // run the logic to see result
   if (dogWeight > 20) {
