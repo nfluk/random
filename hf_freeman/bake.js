@@ -11,3 +11,9 @@ function bake(degrees) {
 
   return message;
 }
+
+var ok = bake(350);
+var hot = bake(550);
+var cold = bake(22);
+
+console.log(cold);
