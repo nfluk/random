@@ -5,15 +5,21 @@ var scores = [
 ];
 
 function summary(scoresArray) {
-  for (i = 0; i < scores.length; i++) {
+  var i = 0;
+  for (i = 0; i < scoresArray.length; i++) {
     document.getElementById("score").innerHTML =
-      "Bubble solution #" + i + " score: " + scores[i];
+      "Bubble solution #" + i + " score: " + scoresArray[i];
+    console.log(scoresArray[i]);
   }
 
   document.getElementById("number-of-tests").innerHTML =
-    "Bubbles tests: " + scores.length;
+    "Bubbles tests: " + scoresArray.length;
+  console.log(scoresArray.length);
   document.getElementById("highest").innerHTML =
-    "Highest bubble score: " + Math.max(scores);
+    "Highest bubble score: " + Math.max(scoresArray);
+  console.log(Math.max(scoresArray));
   document.getElementById("top-scores").innerHTML =
     "Solutions with highest score: ... to be added soon ...";
 }
+
+summary(scores);
