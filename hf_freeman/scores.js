@@ -5,13 +5,13 @@ var scores = [
 ];
 
 function summary(scoresArray) {
-  var i = 0;
+  /*  var i = 0;
   for (i = 0; i < scoresArray.length; i++) {
     document.getElementById("score").innerHTML =
       "Bubble solution #" + i + " score: " + scoresArray[i];
     console.log(scoresArray[i]);
   }
-
+*/
   document.getElementById("number-of-tests").innerHTML =
     "Bubbles tests: " + scoresArray.length;
   console.log(scoresArray.length);
