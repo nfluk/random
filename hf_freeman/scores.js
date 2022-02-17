@@ -4,11 +4,16 @@ var scores = [
   64, 66, 55, 52, 61, 46, 31, 57, 52, 44, 18, 41, 53, 55, 61, 51, 44,
 ];
 
-
 function summary(scoresArray) {
-    for (i = 0; i < scores.length; i++) {
-        document.getElementById("score").innerHTML = "Bubble solution #" + i + " score: " + scores[i];
-    }
+  for (i = 0; i < scores.length; i++) {
+    document.getElementById("score").innerHTML =
+      "Bubble solution #" + i + " score: " + scores[i];
+  }
 
-    document.getElementById("score").
+  document.getElementById("number-of-tests").innerHTML =
+    "Bubbles tests: " + scores.length;
+  document.getElementById("highest").innerHTML =
+    "Highest bubble score: " + Math.max(scores);
+  document.getElementById("top-scores").innerHTML =
+    "Solutions with highest score: ... to be added soon ...";
 }
