@@ -32,5 +32,10 @@ function baby(month) {
   console.log("due is " + due);
 
   document.getElementById("result").innerHTML =
-    "9 months from " + months[pregnant] + " is " + months[due];
+    "9 months from " +
+    months[pregnant] +
+    " is " +
+    "<strong>" +
+    months[due] +
+    "</strong>";
 }
