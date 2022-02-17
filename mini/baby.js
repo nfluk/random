@@ -27,10 +27,10 @@ function baby(month) {
   var pregnant = input - 1; // to correct for the 0 start of the array.
   var due = pregnant + 9;
 
-  console.log(input);
-  console.log(pregnant);
-  console.log(due);
+  console.log("input is " + input);
+  console.log("pregnant is " + pregnant);
+  console.log("due is " + due);
 
   document.getElementById("result").innerHTML =
-    "9 months from " + months[input] + " is " + months[due];
+    "9 months from " + months[pregnant] + " is " + months[due];
 }
