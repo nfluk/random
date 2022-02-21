@@ -16,15 +16,12 @@ function summary(scoresArray) {
       " score: " +
       scoresArray[i] +
       "<br>";
-    console.log(scoresArray[i] + " Test nr " + i);
   }
 
   document.getElementById("number-of-tests").innerHTML =
     "Bubbles tests: " + scoresArray.length;
-  console.log(scoresArray.length);
   document.getElementById("highest").innerHTML =
-    "Highest bubble score: " + Math.max(scoresArray);
-  console.log(Math.max(scoresArray));
+    "Highest bubble score: " + Math.max(...scores);
   document.getElementById("top-scores").innerHTML =
     "Solutions with highest score: ... to be added soon ...";
 }
