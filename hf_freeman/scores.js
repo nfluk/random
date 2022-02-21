@@ -5,13 +5,20 @@ var scores = [
 ];
 
 function summary(scoresArray) {
-  /*  var i = 0;
+  var i = 0;
+  var listBody = document.getElementById("list");
+
   for (i = 0; i < scoresArray.length; i++) {
-    document.getElementById("score").innerHTML =
-      "Bubble solution #" + i + " score: " + scoresArray[i];
-    console.log(scoresArray[i]);
+    listBody.innerHTML =
+      listBody.innerHTML +
+      "Bubble solution #" +
+      i +
+      " score: " +
+      scoresArray[i] +
+      "<br>";
+    console.log(scoresArray[i] + " Test nr " + i);
   }
-*/
+
   document.getElementById("number-of-tests").innerHTML =
     "Bubbles tests: " + scoresArray.length;
   console.log(scoresArray.length);
