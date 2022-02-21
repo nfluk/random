@@ -5,7 +5,6 @@ var scores = [
 ];
 
 function summary(scoresArray) {
-  var i = 0;
   var listBody = document.getElementById("list");
 
   for (i = 0; i < scoresArray.length; i++) {
