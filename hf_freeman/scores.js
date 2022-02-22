@@ -5,9 +5,12 @@ var scores = [
 ];
 
 function summary(scoresArray) {
+  var highestScore = Math.max(...scores);
+  var highScoreArray = [];
   var listBody = document.getElementById("list");
 
   for (var i = 0; i < scoresArray.length; i++) {
+    // go through the array and display test# and score.
     listBody.innerHTML =
       listBody.innerHTML +
       "Bubble solution #" +
@@ -17,12 +20,18 @@ function summary(scoresArray) {
       "<br>";
   }
 
+  for (var i = 0; i < scores.length; i++) {
+    if (scores[i] === highestScore) {
+      highScoreArray.push(i);
+    }
+  }
+
   document.getElementById("number-of-tests").innerHTML =
     "Bubbles tests: " + scoresArray.length;
   document.getElementById("highest").innerHTML =
-    "Highest bubble score: " + Math.max(...scores);
+    "Highest bubble score: " + highestScore;
   document.getElementById("top-scores").innerHTML =
-    "Solutions with highest score: ... to be added soon ...";
+    "Solutions with highest score: " + highScoreArray;
 }
 
 summary(scores);
