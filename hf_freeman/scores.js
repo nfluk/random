@@ -7,7 +7,7 @@ var scores = [
 function summary(scoresArray) {
   var listBody = document.getElementById("list");
 
-  for (i = 0; i < scoresArray.length; i++) {
+  for (var i = 0; i < scoresArray.length; i++) {
     listBody.innerHTML =
       listBody.innerHTML +
       "Bubble solution #" +
